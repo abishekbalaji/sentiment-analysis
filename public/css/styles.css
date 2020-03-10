@@ -1,0 +1,161 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Changa", sans-serif;
+  background: #202022;
+  color: white;
+}
+p {
+  font-family: "Saira", sans-serif;
+  font-size: 1.3rem;
+}
+.first-div {
+  width: 80%;
+}
+
+nav {
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+
+.login-btn {
+  font-size: 1.2rem;
+  margin: 8px 10px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #007bff;
+  margin: 5px 10px;
+  font-weight: 600;
+}
+
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #111;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+.demo .large-header {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+}
+
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.demo .main-title {
+  text-transform: uppercase;
+  font-size: 4.2em;
+  letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+  .demo .main-title {
+    font-size: 3em;
+  }
+}
+
+#section2 {
+  background: #b7b7b7;
+  padding-top: 40px;
+}
+
+.brand {
+  font-size: 1.8rem;
+  font-family: "Changa", sans-serif;
+}
+
+.section2title {
+  font-size: 3.5rem;
+}
+
+.get-file {
+  width: 30%;
+  margin: 5% auto;
+}
+
+.get-key {
+  width: 20%;
+  color: white;
+  margin: 5% auto;
+}
+
+#inputkeyword {
+  display: inline-block;
+}
+
+.keyword-submit {
+  display: inline-block;
+}
+
+.signup-form {
+  width: 48%;
+    /* text-align: center; */
+    margin: auto;
+    margin-top: 200px;
+    color: white;
+}
+
+.red {
+  border: 2px solid red;
+}
+
+.user {
+  margin-top: 5px;
+  width: 100%;
+  text-align: end;
+  margin-right: 10px;
+}
+
+.result {
+  width: 100%;
+  text-align: center;
+}
+
+.instructions {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.about-text {
+  width: 80%;
+  /* text-align: center; */
+  margin:auto;
+}
+
+.about-text h1 {
+  color: #6B9CBD;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.about-text h3 {
+  color: #6B9CBD;
+}
+
+.error-message {
+  width: 50%;
+  text-align: center;
+}
+
+.sentiment-img {
+  margin-top: 80px;
+  text-align: center;
+}

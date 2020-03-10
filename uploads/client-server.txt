@@ -1,0 +1,5 @@
+Client server architecture
+
+processors) request and receive service from a centralized server (host computer). Client computers provide an interface to allow a computer user to request services 
+of the server and to display the results the server returns. Servers wait for requests to arrive from clients and then respond to them. Ideally, a server provides a 
+standardized transparent interface to clients so that clients need not be aware of the specifics of the system 

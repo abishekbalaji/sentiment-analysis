@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sentiment Analysis</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Changa:400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira:400,500,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid first-div">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand brand" href="#">Sentient Tech.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <form action="/signin" method="get">
+                            <button type="submit" class="btn btn-outline-dark login-btn">Login</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="/signup" method="get">
+                            <button type="submit" class="btn btn-dark login-btn">Signup</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="user">{{noUser}}{{firstName}}
+    </div>
+    <div class="instructions">
+        <h2>Enter a keyword</h2>
+        <h1>OR</h1>
+        <h2>Enter the file containg the tweets</h2>
+    </div>
+
+    <form action="/keyword" method="post">
+        <div class="input-group mb-3 get-key">
+            <input type="text" class="form-control" name="key" placeholder="Enter keyword"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Submit</button>
+            </div>
+        </div>
+    </form>
+    <form enctype="multipart/form-data" action="/file" method="post">
+        <div class="input-group get-file">
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" name="tweets" id="inputGroupFile04"
+                    aria-describedby="inputGroupFileAddon04">
+                <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
+            </div>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="submit" id="inputGroupFileAddon04">Submit</button>
+            </div>
+        </div>
+    </form>
+    <div class="result">
+        <h3>{{scoref}}</h3>
+        <h3>{{negPercentage}}</h3>
+        <h3>{{posPercentage}}</h3>
+        <h3>{{neuPercentage}}</h3>
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
