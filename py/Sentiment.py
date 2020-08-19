@@ -5,10 +5,10 @@ import os
 
 from tweepy import OAuthHandler
 
-consumer_api_key = '13eWd32SQfq3LJENzDvavQr67'
-consumer_api_secret = 'a5jGg2mmcaEVKLJBaWsB4ud6XRa18cFsojxc1im417a5O2QlEJ'
-access_token = '1133960670024568832-j3venINUQZfot0Mv4mYTwOXDQyTNkQ'
-access_token_secret = 'R3feDrMW0LV2yed9wNpAOa94t9oQXXH7NCgfDQkLUXvYK'
+consumer_api_key = ''
+consumer_api_secret = ''
+access_token = '-'
+access_token_secret = ''
 
 authorizer = OAuthHandler(consumer_api_key, consumer_api_secret)
 authorizer.set_access_token(access_token, access_token_secret)
